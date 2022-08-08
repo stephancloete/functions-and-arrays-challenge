@@ -11,13 +11,13 @@ tasksCompleted  = [true, false, true, true, false];
     4) Add two more completed tasks with a boolean value of your choice, to the end of the array
 */
 //Add your code below
-    console.log(tasksCompleted);
+    //console.log(tasksCompleted);
     tasksCompleted.shift();
-    console.log(tasksCompleted);
+    //console.log(tasksCompleted);
     tasksCompleted.unshift(false);
-    console.log(tasksCompleted);
+    //console.log(tasksCompleted);
     tasksCompleted.push(true, false, true);
-    console.log(tasksCompleted);
+    //console.log(tasksCompleted);
 
 
 
@@ -26,15 +26,16 @@ tasksCompleted  = [true, false, true, true, false];
 //This function takes a parameter of arrayName.
     function displayArray(arrayName){
     //Add your code below
-
-
+        for (x of arrayName){
+            document.getElementById("output").innerHTML += x + " ";
+        } 
 
     }
     
 //Activity 3 - Print the tasks array to the console by using the function you created in Activity 2
 //Add your code below
 
-
+displayArray(tasks);
 
 //Activity 4 - Complete this function.
 //The purpose of this function is to calculate the sum of all the values in an array.
