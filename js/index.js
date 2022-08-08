@@ -43,7 +43,7 @@ displayArray(tasks);
 //Create a for loop that calculates the sum of all the values in an array store the answer in the total variable.
 //Outside the for loop, console log the total.
     
-/*function calculateTotal(arrayName){
+function calculateTotal(arrayName){
     //Add your code below
     var counter = 1;
     var counterTwo = 0;
@@ -54,7 +54,7 @@ displayArray(tasks);
         }
         console.log(total);
     }
-*/
+
 //Activity 5 - Call the calculateTotal function and pass tasksCompleted as an argument.
 //Add your code below
 
@@ -67,24 +67,25 @@ displayArray(tasks);
 //Outside the for loop, create a variable called average and store your calculations of the average in that variable
 //Add your code below
 
-function calculateTotal(arrayName){
+function calculateAvg(arrayName){
     //Add your code below
-    var counter = 1;
-    var counterTwo = 0;
+    var counterThree = 1;
+    var counterFour = 0;
     for (y of arrayName){
-            var total = counterTwo + counter;
-            counter++;
-            counterTwo = total;
+            var totalSum = counterFour + counterThree;
+            counterThree++;
+            counterFour = totalSum;
         }
-        let average = total/arrayName.length;
+        let average = totalSum/arrayName.length;
         console.log(average);
     }
 
-calculateTotal(tasksCompleted);
+
 
 //Activity 7 - Call your calculate average function with tasksCompleted array as it's argument
 //Add your code below
 
+calculateAvg(tasksCompleted);
 
 //Bonus Activity:
 //Rewrite activity 6 to calculate the average of the amount of tasksCompleted that is equal to true
