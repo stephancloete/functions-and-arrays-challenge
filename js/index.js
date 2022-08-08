@@ -43,7 +43,7 @@ displayArray(tasks);
 //Create a for loop that calculates the sum of all the values in an array store the answer in the total variable.
 //Outside the for loop, console log the total.
     
-function calculateTotal(arrayName){
+/*function calculateTotal(arrayName){
     //Add your code below
     var counter = 1;
     var counterTwo = 0;
@@ -54,13 +54,11 @@ function calculateTotal(arrayName){
         }
         console.log(total);
     }
-
+*/
 //Activity 5 - Call the calculateTotal function and pass tasksCompleted as an argument.
 //Add your code below
 
-calculateTotal(tasksCompleted);
-
-
+//calculateTotal(tasksCompleted);
 
 //Activity 6 - Complete this function
 //The purpose of this function is to calculate the average of the values put together in an array
@@ -69,6 +67,20 @@ calculateTotal(tasksCompleted);
 //Outside the for loop, create a variable called average and store your calculations of the average in that variable
 //Add your code below
 
+function calculateTotal(arrayName){
+    //Add your code below
+    var counter = 1;
+    var counterTwo = 0;
+    for (y of arrayName){
+            var total = counterTwo + counter;
+            counter++;
+            counterTwo = total;
+        }
+        let average = total/arrayName.length;
+        console.log(average);
+    }
+
+calculateTotal(tasksCompleted);
 
 //Activity 7 - Call your calculate average function with tasksCompleted array as it's argument
 //Add your code below
