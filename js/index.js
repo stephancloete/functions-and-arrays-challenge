@@ -17,7 +17,7 @@ tasksCompleted  = [true, false, true, true, false];
     tasksCompleted.unshift(false);
     //console.log(tasksCompleted);
     tasksCompleted.push(true, false, true);
-    //console.log(tasksCompleted);
+    console.log(tasksCompleted);
 
 
 
@@ -42,16 +42,23 @@ displayArray(tasks);
 //Create a variable inside this function called total and set it equal to 0.
 //Create a for loop that calculates the sum of all the values in an array store the answer in the total variable.
 //Outside the for loop, console log the total.
-    function calculateTotal(arrayName){
+    
+function calculateTotal(arrayName){
     //Add your code below
-
-
-
+    var counter = 1;
+    var counterTwo = 0;
+    for (y of arrayName){
+            var total = counterTwo + counter;
+            counter++;
+            counterTwo = total;
+        }
+        console.log(total);
     }
 
 //Activity 5 - Call the calculateTotal function and pass tasksCompleted as an argument.
 //Add your code below
 
+calculateTotal(tasksCompleted);
 
 
 
